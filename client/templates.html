@@ -1,0 +1,77 @@
+<template name="formulario">
+
+  <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="fa fa-plus-square fa-lg" aria-hidden="true"></i>
+Nuevo</div>
+      <div class="collapsible-body">
+			 <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s3">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <input id="icon_prefix" type="text" name="ubicacion" class="validate">
+          <label for="icon_prefix">Ubicacion</label>
+        </div>
+        <div class="input-field col s3">
+          <i class="fa fa-tag" aria-hidden="true"></i>
+          <input id="icon_telephone" type="text" name="alias" class="validate">
+          <label for="icon_telephone">Alias</label>
+        </div>
+         <div class="input-field col s3">
+          <i class="fa fa-gamepad" aria-hidden="true"></i>
+          <input id="icon_telephone" type="text" name="tipo" class="validate">
+          <label for="icon_telephone">Tipo</label>
+        </div>
+        <div class="input-field col s3">
+          <input type="submit" class="waves-effect waves-light btn guardar" value="Guardar">
+        </div>
+      </div>
+    </form>
+  </div>
+      </div>
+    </li>
+  </ul>
+
+  
+        
+</template>
+
+<template name="datosMaquina">
+ <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s2">
+          <i class="fa fa-calendar" aria-hidden="true"></i>
+  			<input type="date" class="datepicker" name="fecha">        
+          <label for="icon_prefix">Fecha</label>
+        </div>
+        <div class="input-field col s2">
+          <i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
+          <input id="icon_telephone" type="text" name="conEntrada" class="validate">
+          <label for="icon_telephone">Contadores de Entrada</label>
+        </div>
+         <div class="input-field col s2">
+          <i class="fa fa-sort-amount-asc" aria-hidden="true"></i>
+          <input id="icon_telephone" type="text" name="conSalida" class="validate">
+          <label for="icon_telephone">Contadores de Salida</label>
+        </div>
+        <div class="input-field col s2">
+          <i class="fa fa-money" aria-hidden="true"></i>
+          <input id="icon_telephone" type="text" name="total" class="validate">
+          <label for="icon_telephone">Total Recaudado</label>
+        </div>
+        <div class="input-field col s2">
+          <input type="submit" class="waves-effect waves-light btn guardar" value="Guardar">
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script>
+  	$('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+  </script>
+</template>
