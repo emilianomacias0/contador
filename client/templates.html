@@ -8,22 +8,27 @@ Nuevo</div>
 			 <div class="row">
     <form class="col s12">
       <div class="row">
-        <div class="input-field col s3">
+        <div class="input-field col s8 m6 l3">
           <i class="fa fa-map-marker" aria-hidden="true"></i>
           <input id="icon_prefix" type="text" name="ubicacion" class="validate">
-          <label for="icon_prefix">Ubicacion</label>
+          <label for="icon_prefix">Ubicaciòn</label>
         </div>
-        <div class="input-field col s3">
+        <div class="input-field col s8 m6 l3">
           <i class="fa fa-tag" aria-hidden="true"></i>
           <input id="icon_telephone" type="text" name="alias" class="validate">
           <label for="icon_telephone">Alias</label>
         </div>
-         <div class="input-field col s3">
+         <div class="input-field col s8 m6 l3">
           <i class="fa fa-gamepad" aria-hidden="true"></i>
           <input id="icon_telephone" type="text" name="tipo" class="validate">
           <label for="icon_telephone">Tipo</label>
         </div>
-        <div class="input-field col s3">
+         <div class="input-field col s8 m6 l3">
+          <i class="fa fa-percent " aria-hidden="true"></i>
+          <input id="icon_telephone" type="number" name="comision" class="validate">
+          <label for="icon_telephone">Comisiòn</label>
+        </div>
+        <div class="input-field col s8 m6 l3">
           <input type="submit" class="waves-effect waves-light btn guardar" value="Guardar">
         </div>
       </div>
@@ -41,27 +46,37 @@ Nuevo</div>
  <div class="row">
     <form class="col s12">
       <div class="row">
-        <div class="input-field col s2">
+        <div class="input-field col s8 m6 l3">
           <i class="fa fa-calendar" aria-hidden="true"></i>
   			<input type="date" class="datepicker" name="fecha">        
           <label for="icon_prefix">Fecha</label>
         </div>
-        <div class="input-field col s2">
+        <div class="input-field col s8 m6 l3">
           <i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
-          <input id="icon_telephone" type="text" name="conEntrada" class="validate">
+          <input id="icon_telephone" type="number" name="conEntrada" class="validate">
           <label for="icon_telephone">Contadores de Entrada</label>
         </div>
-         <div class="input-field col s2">
+         <div class="input-field col s8 m6 l3">
           <i class="fa fa-sort-amount-asc" aria-hidden="true"></i>
-          <input id="icon_telephone" type="text" name="conSalida" class="validate">
+          <input id="icon_telephone" type="number" name="conSalida" class="validate">
           <label for="icon_telephone">Contadores de Salida</label>
         </div>
-        <div class="input-field col s2">
+        <div class="input-field col s8 m6 l3">
           <i class="fa fa-money" aria-hidden="true"></i>
-          <input id="icon_telephone" type="text" name="total" class="validate">
+          <input id="icon_telephone" type="number" name="total" class="validate">
           <label for="icon_telephone">Total Recaudado</label>
         </div>
-        <div class="input-field col s2">
+          <div class="input-field col s8 m6 l3">
+          <i class="fa fa-money" aria-hidden="true"></i>
+          <input id="icon_telephone" type="number" name="total" class="validate">
+          <label for="icon_telephone">Total Comision</label>
+        </div>
+          <div class="input-field col s8 m6 l3">
+          <i class="fa fa-money" aria-hidden="true"></i>
+          <input disabled  id="disabled" type="number" name="total" class="validate">
+          <label for="icon_telephone">Total</label>
+        </div>
+        <div class="input-field col s8 m6 l3">
           <input type="submit" class="waves-effect waves-light btn guardar" value="Guardar">
         </div>
       </div>
